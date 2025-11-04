@@ -26,6 +26,23 @@ public class TextAdventure {
             boolean dead = false;
 
             // Intro and title
+            System.out.println("   \n" +
+                    "              /=\\\\\n" +
+                    "             /===\\ \\\n" +
+                    "            /=====\\' \\\n" +
+                    "           /=======\\'' \\\n" +
+                    "          /=========\\ ' '\\\n" +
+                    "         /===========\\''   \\\n" +
+                    "        /=============\\ ' '  \\\n" +
+                    "       /===============\\   ''  \\\n" +
+                    "      /=================\\' ' ' ' \\\n" +
+                    "     /===================\\' ' '  ' \\\n" +
+                    "    /=====================\\' '   ' ' \\\n" +
+                    "   /=======================\\  '   ' /\n" +
+                    "  /=========================\\   ' /\n" +
+                    " /===========================\\'  /\n" +
+                    "/=============================\\/");
+
             System.out.println("\n========================================\n THE GREAT PYRAMID AND THE LOST EXPLORER\n========================================");
             System.out.println("You are an explorer who has gotten lost inside the Great Pyramid of Giza.");
             System.out.println("Your goal is to survive and escape. \n");
@@ -144,7 +161,7 @@ public class TextAdventure {
                             {
                                 System.out.println("Invalid attempt. Please enter a number 1-5: ");
                                 x = sc.nextLine().trim();
-                        }
+                            }
                             int guess = Integer.parseInt(x);
                             if (guess == secret)
                             {
@@ -174,7 +191,7 @@ public class TextAdventure {
                     else
                     {
                         // inspecting the gate
-                        System.out.println("\nYOu kneel by the grate and peer through into a dark pit.");
+                        System.out.println("\nYou kneel by the grate and peer through into a dark pit.");
                         if (hasTorch)
                         {
                             System.out.println("With your torch you see a key at the bottom.");
@@ -470,14 +487,14 @@ public class TextAdventure {
                 } else if (escaped && score >= 35) {
                     // Secret ending
                     System.out.println("Ending: Secret Legacy");
-                    System.out.println("You emerge into the dawn with treasures and knowledge. Your discovery will rewrite history!");
+                    System.out.println("You come out of the pyramid with treasures and knowledge. Your discovery will rewrite history!");
                 } else if (escaped) {
                     // Winning ending
                     System.out.println("Ending: Narrow Escape");
-                    System.out.println("You find your way out into the bright Egyptian sun. You survived — and lived to tell the tale.");
+                    System.out.println("You find your way out into the bright Egyptian sun. You survived and lived to tell the tale.");
                 } else {
                     // Another losing ending
-                    System.out.println("Ending: Stalled");
+                    System.out.println("Ending: Alive... For Now");
                     System.out.println("You are alive but trapped in a sealed chamber. Rescue may come... or may not.");
                 }
 
@@ -502,5 +519,3 @@ public class TextAdventure {
         }
     }
 }
-
-
