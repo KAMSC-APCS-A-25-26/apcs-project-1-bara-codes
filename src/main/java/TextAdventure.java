@@ -498,7 +498,7 @@ public class TextAdventure {
                     System.out.println("You are alive but trapped in a sealed chamber. Rescue may come... or may not.");
                 }
 
-                // Replay prompt
+                // Replay 
                 String again = "";
                 while (true) {
                     System.out.print("\nPlay again? [Y/N]: ");
@@ -513,7 +513,7 @@ public class TextAdventure {
                     playAgain = false;
                     System.out.println("\nThanks for playing The Great Pyramid: Lost Explorer. Goodbye!");
                 }
-            } // end replay loop
+            } 
 
             sc.close();
         }
